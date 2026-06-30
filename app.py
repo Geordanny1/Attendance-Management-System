@@ -5,9 +5,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-<<<<<<< HEAD
-    return render_template("home.html")
-=======
 
     calendar = get_present_month_calendar()
 
@@ -25,11 +22,7 @@ def management():
 def about():
     return render_template("about.html", title = "about")
 
-
-
-
 # Helper Funtions
-
 def get_present_year_and_month() -> tuple[int, int]:
 
     import datetime as dt
@@ -39,10 +32,10 @@ def get_present_year_and_month() -> tuple[int, int]:
     year = today.year
     month = today.month
 
-    return year, month
+    return ( year, month )
 
 
-def get_present_month_calendar():
+def get_present_month_calendar() -> str:
     import calendar
     
     cal = calendar.HTMLCalendar()
@@ -52,7 +45,6 @@ def get_present_month_calendar():
     present_month_calendar = cal.formatmonth(year, month, withyear = True) 
 
     return present_month_calendar
->>>>>>> b247205 (Merge branch 'testing' into main and fix conflicts)
 
 
 

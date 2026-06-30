@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-
-
 .container {
   display: grid;
   grid-template-columns: 2fr 10fr;
 }
-=======
+
 :root {
   --main-color: #9d2236;
   --secundary-color: #f3eed9;
@@ -170,4 +167,3 @@ footer {
 
 
 
->>>>>>> b247205 (Merge branch 'testing' into main and fix conflicts)
