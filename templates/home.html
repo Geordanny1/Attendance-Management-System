@@ -2,5 +2,55 @@
 
 
 {% block content %}
+<<<<<<< HEAD
 <h1>example of some text</h1>
+=======
+
+<div class="day-container">
+  <ul class="day-list">
+    <li id="monday-input-li">
+      <input id="monday-input" type="checkbox" name="">
+      <label for="day-check">Monday</label>
+    </li>
+    <li id="tuesday-input-li">
+      <input id="tuesday-input" type="checkbox" name="">
+      <label for="day-check">Tuesday</label>
+    </li>
+    <li id="wednesday-input-li">
+      <input id="wednesday-input" type="checkbox" name="">
+      <label for="day-check">Wednesday</label>
+    </li>
+    <li id="thurday-input-li">
+      <input id="thurday-input" type="checkbox" name="">
+      <label for="day-check">Thurday</label>
+    </li>
+    <li id="friday-input-li">
+      <input id="friday-input" type="checkbox" name="">
+      <label for="day-check">Friday</label>
+    </li>
+    <li id="saturday-input-li">
+      <input id="saturday-input" type="checkbox" name="">
+      <label for="day-check">Saturday</label>
+    </li>
+    <li id="sunday-input-li">
+      <input id="sunday-input" type="checkbox" name="">
+      <label for="day-check">Sunday</label>
+    </li>
+  </ul>
+  <button id="save-setting" class="button">save day selection</button>
+</div>
+
+<div class="calendar-container">
+  {{ calendar | safe}}
+  <br>
+  <div class="calendar-btn-container">
+    <button class="button">next month</button>
+    <button class="button">prev month</button>
+    <button class="button">present</button>
+  </div>
+  <div class="changes-button-container">
+    <button class="button">apply changes</button>
+  </div>
+</div>
+>>>>>>> b247205 (Merge branch 'testing' into main and fix conflicts)
 {% endblock %}

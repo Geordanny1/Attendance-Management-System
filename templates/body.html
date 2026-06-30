@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="En">
+=======
+<html lang="en-us">
+>>>>>>> b247205 (Merge branch 'testing' into main and fix conflicts)
 <head>
   <meta charset="UTF-8">
   <title>{{ title }}</title>
@@ -8,6 +12,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <div class="container">
 
       {% include "sidebar.html" %}
@@ -15,13 +20,38 @@
       <div class="main">
         {% block content %}{% endblock %}
 
+=======
+    <div>
+      <nav class="navbar-wrapper">
+        <ul class="navbar">
+          <li > <a  class="{% if request.path == "/" %}active{% endif %}" href="/">home</a></li>
+          <li> <a class="{% if request.path == "/management" %}active{% endif %}"  href="/management">management</a> </li>
+          <li> <a  class="{% if request.path == "/statistics" %}active{% endif %}" href="/statistics">statistics</a></li>
+          <li> <a  class="{% if request.path == "/about" %}active{% endif %}" href="/about">about</a></li>
+        </ul>
+      </nav>
+
+      <div class="main">
+        <header>
+          <h1 class="title">{{title}} page</h1>
+            <input id="data-input" type="file" name="input for entering the excel file">
+        </header>
+        {% block content %}{% endblock %}
+>>>>>>> b247205 (Merge branch 'testing' into main and fix conflicts)
       </div>
 
     </div>
 
+<<<<<<< HEAD
   <footer>
     <p>Made with <3 by Geordanny </p>
   </footer>
+=======
+
+    <footer>
+      <p>made with love by &hearts; Geordanny</p>
+    </footer>
+>>>>>>> b247205 (Merge branch 'testing' into main and fix conflicts)
 
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
