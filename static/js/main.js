@@ -124,8 +124,6 @@ async function changeMonth(direction){
 
   const inputs = [mondayInput, tuesdayInput, wednesdayInput, thurdayInput, fridayInput, saturdayInput, sundayInput]
 
-  console.log(inputs)
-
   changeDayColorBaseOnInput()
 
   inputs.forEach( input => {
@@ -231,6 +229,7 @@ function applySelectedDay(day) {
   }
 
 }
+
 window.addEventListener("load", (event) => {
   inputCheck()
   changeDayColorBaseOnInput()

@@ -5,9 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-
     calendar = get_present_month_calendar()
-
     return render_template("home.html", title = "home", calendar = calendar)
 
 @app.route("/statistics")
